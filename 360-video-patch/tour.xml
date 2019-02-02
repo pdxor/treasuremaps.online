@@ -1,0 +1,48 @@
+<krpano version="1.17" title="Virtual Tour" onstart="startup();">
+		<!-- the skin -->
+	<include url="../skin/defaultskin.xml" />
+    <include url="../plugins/loadinganimation.xml" />
+	<include url="../plugins/loadingpercenttext.xml" />
+	<include url="../plugins/loadingbar.xml" />	
+	
+<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" fovmin="45" />
+	<!-- preview pano image -->
+	<preview url="taos-19-hybrid.tiles/preview.jpg" />
+
+	<!-- pano image -->
+	<image type="CYLINDER" hfov="1.00" vfov="0.576923" voffset="0.00" multires="true" tilesize="512" progressive="true">
+		<level tiledimagewidth="33280" tiledimageheight="19200" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l7/%v/l7_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="16640" tiledimageheight="9600" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l6/%v/l6_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="8320" tiledimageheight="4800" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l5/%v/l5_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="4160" tiledimageheight="2400" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l4/%v/l4_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="2048" tiledimageheight="1182" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l3/%v/l3_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="1024" tiledimageheight="592" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l2/%v/l2_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="512" tiledimageheight="296" download="view">
+			<cylinder url="taos-19-hybrid.tiles/l1/%v/l1_%v_%h.jpg" />
+		</level>
+	</image>
+
+		<!-- place your scene hotspots here -->
+ 
+        <events onclick="js( enterdata() );" />
+    <!-- place your scene hotspots here -->
+
+
+<include devices="iphone+retina" url="mobilemyfile.xml?%$random%" />
+<include devices="mobile|tablet+html5" url="mobilemyfile.xml?%$random%" />
+<include devices="desktop" url="myfile.xml?%$random%" />
+
+
+</krpano>

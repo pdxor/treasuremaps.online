@@ -1,0 +1,11 @@
+<?php 
+$togswitch = get_field('toggle');
+ if ( $togswitch == 'yes' ): ?>
+<?php else: ?>
+<?php endif ?>
+
+\
+
+		krpano().call("moveto(100.0,5,linear(10));");
+		
+		

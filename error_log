@@ -1,0 +1,15 @@
+[06-May-2018 15:23:29 America/Chicago] PHP Fatal error:  Call to undefined function wp_get_referer() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/404.php on line 14
+[26-May-2018 16:41:27 America/Chicago] PHP Fatal error:  Call to undefined function wp_title() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/index.php on line 1
+[26-May-2018 16:44:37 America/Chicago] PHP Fatal error:  Call to undefined function wp_title() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/index.php on line 1
+[09-Jan-2019 09:07:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_referer() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/404.php:14
+Stack trace:
+#0 {main}
+  thrown in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/404.php on line 14
+[09-Jan-2019 09:07:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/header.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/header.php on line 1
+[09-Jan-2019 09:07:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/enizielski/public_html/treasuremaps.online/wp-content/themes/WP-VR-Press/index.php on line 1

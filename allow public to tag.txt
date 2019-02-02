@@ -1,0 +1,25 @@
+<?php 
+$values = get_field('privacy');
+ if ( $values == 'public' && !is_user_logged_in() ): ?>
+  <div class="loginForm" style="display:none;">
+    <p>Logging in gives you instant access to this map and a growing collection of free map templates offered by a community of other adventurious Treasure Mappers!</p>
+<a href="https://treasuremaps.online/wp-login.php?loginFacebook=1&redirect=https://treasuremaps.online" onclick="window.location = 'https://treasuremaps.online/wp-login.php?loginFacebook=1&redirect='+window.location.href; return false;"> <img style="display: block; margin: 0 auto; max-width: 222px;" src="https://treasuremaps.online/wp-content/uploads/2017/05/fblogin-e1499436066106.png" /> </a>
+By logging in you are agreeing to our <a target="_blank" style="color: red; text-decoration: underline;"  href="https://treasuremaps.online/tos-page/">terms. </a>
+      </div>
+    <script>
+$(window).load( function(){
+        var loginForm = $('.loginForm').html();
+        rplm({
+          title: "<img style='max-width: 77px;' src='<?php echo get_stylesheet_directory_uri(); ?>/images/tropen-150x150.png'> <br/>Tag This Treasuremap Now!",
+          text: "" + loginForm,
+          html: true,
+          animation: "swing",
+          modalNOverlay: 'transparent',
+          overlay: 'transparent',
+            showCloseButton: false,
+            showConfirmButton: false,            
+        });
+      });
+    </script>
+<?php else: ?>
+<?php endif ?>

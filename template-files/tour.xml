@@ -1,0 +1,24 @@
+<krpano version="1.17" title="Virtual Tour" onstart="startup();">
+		<!-- the skin -->
+	<include url="../skin/defaultskin.xml" />
+    <include url="../plugins/loadinganimation.xml" />
+	<include url="../plugins/loadingpercenttext.xml" />
+	<include url="../plugins/loadingbar.xml" />	
+	
+<view hlookat="0" vlookat="0" maxpixelzoom="1.0" fovmax="150" fovmin="45" />
+<image type="CYLINDER" hfov="1.00" vfov="0.771712" voffset="0.00">
+	<cylinder url="panos/panorama.tiles/map.jpg" />
+</image>
+
+		<!-- place your scene hotspots here -->
+ 
+        <events onclick="js( enterdata() );" />
+    <!-- place your scene hotspots here -->
+
+
+<include devices="iphone+retina" url="mobilemyfile.xml?%$random%" />
+<include devices="mobile|tablet+html5" url="mobilemyfile.xml?%$random%" />
+<include devices="desktop" url="myfile.xml?%$random%" />
+
+
+</krpano>
